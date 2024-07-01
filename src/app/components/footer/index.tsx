@@ -3,7 +3,7 @@ import React from "react";
 import {Col, Row, Typography} from "antd";
 import "./style.css";
 import {MdEmail} from "react-icons/md";
-import {BsLinkedin} from "react-icons/bs";
+import {BsInstagram, BsLinkedin} from "react-icons/bs";
 import Title from "antd/es/typography/Title";
 
 export default function Footer() {
@@ -12,10 +12,35 @@ export default function Footer() {
       <Col>
         <Row style={{alignItems: "center", gap: 10, justifyContent: "center"}}>
           <Title style={{color: "#fff"}} level={3}>
-            Contatos
+            Nossas redes sociais
           </Title>
         </Row>
         <Col className="box-contacts-footer">
+          <Row style={{alignItems: "center", gap: 10}}>
+            <a
+              className="instagran"
+              target="_blank"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                textDecoration: "none",
+                color: "silver",
+              }}
+              href="https://www.instagram.com/techworksa/"
+            >
+              <BsInstagram
+                className="iconinstagran"
+                onClick={() =>
+                  (window.location.href =
+                    "https://www.instagram.com/techworksa/")
+                }
+                size={30}
+              ></BsInstagram>{" "}
+              Instagran
+            </a>
+          </Row>
+          <br />
           <Row style={{alignItems: "center", gap: 10}}>
             <a
               className="linkedin"

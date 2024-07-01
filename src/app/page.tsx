@@ -5,6 +5,8 @@ import Header from "./components/header";
 import "./page.css";
 import {Button, Card} from "antd";
 import ilustration from "../../public/ilustration.jpg";
+import {BsWhatsapp} from "react-icons/bs";
+import Link from "antd/es/typography/Link";
 
 export default function Home() {
   const projectsTypes = [
@@ -18,7 +20,7 @@ export default function Home() {
     {
       key: 2,
       title: "Sites institucionais",
-      subtitlte: "Site para dar uma identidade digital para o seu negócio",
+      subtitlte: "Dar uma identidade digital para o seu negócio é essencial!",
       img: "https://img.icons8.com/nolan/64/1A6DFF/C822FF/device-shop.png",
     },
     {
@@ -42,7 +44,9 @@ export default function Home() {
             momento do seu negócio, que atenda as expectativas do seu Cliente
             Final.
           </p>
-          <Button>Saiba mais</Button>
+          <Link href="https://wa.me/5555119612564?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to.">
+            Fazer um orçamento <BsWhatsapp></BsWhatsapp>
+          </Link>
         </div>
       </section>
       <section className="aboutus">
@@ -90,7 +94,7 @@ export default function Home() {
               qualquer tipo de dispositivo e tenha uma experiência única !
             </p>
             <br />
-            <div style={{display: "flex", gap: "10px"}}>
+            <div className="ilustrations-seo" style={{display: "flex", gap: "10px"}}>
               <img
                 width="80"
                 height="80"
@@ -102,6 +106,12 @@ export default function Home() {
                 height="80"
                 src="https://img.icons8.com/external-vectorslab-flat-vectorslab/80/external-Seo-seo-and-marketing-vectorslab-flat-vectorslab-3.png"
                 alt="external-Seo-seo-and-marketing-vectorslab-flat-vectorslab-3"
+              />
+              <img
+                width="80"
+                height="80"
+                src="https://img.icons8.com/color/80/first-place-ribbon.png"
+                alt="first-place-ribbon"
               />
             </div>
           </div>

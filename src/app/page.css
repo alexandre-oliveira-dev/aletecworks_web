@@ -33,14 +33,6 @@
   margin-bottom: 0px;
   width: 45%;
 
-  /*  &::after {
-    content: '';
-    display: flex;
-    width: 100%;
-    height: 10px;
-    background-color: var(--bacColorDetails);
-    margin-bottom: 5px;
-  } */
 }
 
 .box-text>p {
@@ -48,19 +40,29 @@
   margin: 0px;
   font-size: 20px;
   width: 45%;
-  background-color: var(--bacColorDetails);
+  border: 1px solid var(--bacColorDetails);
   padding: 1rem;
   border-radius: 5px;
 }
 
-.box-text>button {
+.box-text>a {
   margin-top: 3rem;
   min-width: 200px;
   height: 50px;
-  background-color: var(--bacColorDetails);
+  background-color: #fff;
   border: 0;
   font-size: 20px;
-  color: #fff;
+  color: var(--bacColorDetails);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  gap: 10px;
+
+  &:hover {
+    background-color: var(--bacColorDetails) !important;
+    color: #fff !important;
+  }
 }
 
 .aboutus {
@@ -83,6 +85,7 @@
 .title-aboutus>p {
   color: #f6f6f6;
   text-align: center;
+  font-size: 20px;
 }
 
 .box-projects-types {
@@ -99,7 +102,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: 5px 5px 40px #fff;
 }
 
 .section-default-style {
@@ -108,19 +110,20 @@
   height: auto;
   justify-content: flex-end;
   margin-top: 7rem;
+  padding-bottom: 2rem;
 }
 
 .box-text-ilustration {
   width: 70%;
 }
 
-.box-text-ilustration:last-child {
+/* .box-text-ilustration:last-child {
   align-items: flex-start !important;
-}
+} */
 
 .section-default-style>div>img {
   width: 350px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 10px 10px 10px;
 }
 
 .text-with-ilustration {
@@ -139,4 +142,73 @@
 .text-with-ilustration>p {
   width: 60%;
   color: #fff;
+}
+
+@media(max-width:500px) {
+
+  .box-text>h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .box-text>p {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .title-aboutus {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .title-aboutus>h1 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .title-aboutus>p {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .box-projects-types {
+    justify-content: center;
+  }
+
+  .box-text-ilustration>img {
+    display: none;
+  }
+
+  .box-text-ilustration {
+    width: 100%;
+  }
+
+  .text-with-ilustration {
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-with-ilustration>h2 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-with-ilustration>p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ilustrations-seo {
+    margin-top: 1rem;
+  }
 }
