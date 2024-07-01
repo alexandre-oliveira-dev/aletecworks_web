@@ -1,5 +1,142 @@
 .home-container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--bacColor);
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../public/background.gif');
+  background-position: cover;
+  z-index: 1;
+  display: flex;
+}
+
+.box-text {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-text>h1 {
+  z-index: 10 !important;
+  color: #fff;
+  font-weight: 600;
+  font-size: 70px;
+  margin-bottom: 0px;
+  width: 45%;
+
+  /*  &::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 10px;
+    background-color: var(--bacColorDetails);
+    margin-bottom: 5px;
+  } */
+}
+
+.box-text>p {
+  color: #fff;
+  margin: 0px;
+  font-size: 20px;
+  width: 45%;
+  background-color: var(--bacColorDetails);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.box-text>button {
+  margin-top: 3rem;
+  min-width: 200px;
+  height: 50px;
+  background-color: var(--bacColorDetails);
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.aboutus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0px 1rem 0px;
+}
+
+.title-aboutus {
+  width: 55%;
+}
+
+.title-aboutus>h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.title-aboutus>p {
+  color: #f6f6f6;
+  text-align: center;
+}
+
+.box-projects-types {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.card-item-project-type {
+  width: 300px;
+  height: 360px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 40px #fff;
+}
+
+.section-default-style {
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: flex-end;
+  margin-top: 7rem;
+}
+
+.box-text-ilustration {
+  width: 70%;
+}
+
+.box-text-ilustration:last-child {
+  align-items: flex-start !important;
+}
+
+.section-default-style>div>img {
+  width: 350px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.text-with-ilustration {
+  width: 100%;
+  height: 400px;
+  background-color: var(--bacColorDetails);
+  padding: 2rem;
+}
+
+.text-with-ilustration>h2 {
+  color: #fff;
+  width: 60%;
+  font-size: 45px;
+}
+
+.text-with-ilustration>p {
+  width: 60%;
+  color: #fff;
 }
