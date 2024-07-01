@@ -8,18 +8,19 @@ import Image from "next/image";
 export default function Header() {
   const [collapsed, setCollapsed] = useState(false);
 
-  window.addEventListener("scroll", function () {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition !== 0 && !collapsed) {
-      document
-        .querySelector(".header-component")
-        ?.classList.add("header-fixed");
-    } else {
-      document
-        .querySelector(".header-component")
-        ?.classList.remove("header-fixed");
-    }
-  });
+  if (typeof window !== "undefined")
+    window.addEventListener("scroll", function () {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition !== 0 && !collapsed) {
+        document
+          .querySelector(".header-component")
+          ?.classList.add("header-fixed");
+      } else {
+        document
+          .querySelector(".header-component")
+          ?.classList.remove("header-fixed");
+      }
+    });
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
@@ -90,20 +91,22 @@ export default function Header() {
       <div className="buttons-list">
         <button
           onClick={() => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
+            if (typeof window !== "undefined")
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
           }}
         >
           Inicio
         </button>
         <button
           onClick={() => {
-            window.scrollTo({
-              top: 1500,
-              behavior: "smooth",
-            });
+            if (typeof window !== "undefined")
+              window.scrollTo({
+                top: 1500,
+                behavior: "smooth",
+              });
           }}
         >
           Projetos
