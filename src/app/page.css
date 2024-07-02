@@ -2,6 +2,35 @@
   width: 100%;
   height: auto;
   background-color: var(--bacColor);
+  position: relative;
+}
+
+.btnwhts {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #128c7e;
+  color: #fff;
+  bottom: 100px;
+  right: 30px;
+  border: 0;
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 25px 2px #fff;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .section {
@@ -147,6 +176,9 @@
 }
 
 @media(max-width:500px) {
+  .section {
+    flex: 1;
+  }
 
   .box-text>h1 {
     font-size: 30px;
@@ -165,17 +197,16 @@
   }
 
   .title-aboutus>h1 {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     width: 100%;
 
   }
 
   .title-aboutus>p {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     width: 100%;
-
   }
 
   .box-projects-types {
@@ -208,9 +239,21 @@
   .text-with-ilustration>p {
     width: 100%;
     text-align: center;
+    font-size: large;
   }
 
   .ilustrations-seo {
     margin-top: 1rem;
+
+  }
+
+  .ilustrations-seo>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .section-default-style {
+    min-height: auto !important;
+    margin-top: 2rem;
   }
 }

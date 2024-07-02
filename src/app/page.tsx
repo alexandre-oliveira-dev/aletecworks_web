@@ -123,6 +123,9 @@ export default function Home() {
       </section>
       <Projects></Projects>
       <Footer></Footer>
+      <button className="btnwhts">
+        <BsWhatsapp size={30}></BsWhatsapp>
+      </button>
     </main>
   );
 }
