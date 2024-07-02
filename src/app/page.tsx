@@ -45,7 +45,7 @@ export default function Home() {
             momento do seu negócio, que atenda as expectativas do seu Cliente
             Final.
           </p>
-          <Link href="https://wa.me/5555119612564?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to.">
+          <Link href="https://wa.me/55119612564?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to.">
             Fazer um orçamento <BsWhatsapp></BsWhatsapp>
           </Link>
         </div>
