@@ -7,6 +7,7 @@ import {Button, Card} from "antd";
 import ilustration from "../../public/ilustration.jpg";
 import {BsWhatsapp} from "react-icons/bs";
 import Link from "antd/es/typography/Link";
+import Projects from "./components/projects";
 
 export default function Home() {
   const projectsTypes = [
@@ -94,7 +95,10 @@ export default function Home() {
               qualquer tipo de dispositivo e tenha uma experiência única !
             </p>
             <br />
-            <div className="ilustrations-seo" style={{display: "flex", gap: "10px"}}>
+            <div
+              className="ilustrations-seo"
+              style={{display: "flex", gap: "10px"}}
+            >
               <img
                 width="80"
                 height="80"
@@ -117,6 +121,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Projects></Projects>
       <Footer></Footer>
     </main>
   );

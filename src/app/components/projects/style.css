@@ -1,0 +1,62 @@
+.projectscomponent>h1 {
+    color: #fff;
+}
+
+.imgModel {
+    width: 400px !important;
+    height: 200px !important;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.box-image-model {
+    height: calc(200px + 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-image-model>button {
+
+    border: 1px solid var(--bacColorDetails);
+    color: #fff;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: var(--bacColorDetails);
+    }
+}
+
+.box-models {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+@media(max-width:500px) {
+    .projectscomponent>h1 {
+        text-align: center;
+    }
+
+    .box-models {
+        gap: 3rem;
+    }
+
+    .imgModel {
+        width: 100% !important;
+    }
+
+    .projectscomponent {
+        margin-bottom: 3rem;
+    }
+}
