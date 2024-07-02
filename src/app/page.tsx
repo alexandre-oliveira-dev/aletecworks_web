@@ -3,7 +3,7 @@ import Title from "antd/es/typography/Title";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import "./page.css";
-import {Button, Card} from "antd";
+import {Card} from "antd";
 import ilustration from "../../public/ilustration.jpg";
 import {BsWhatsapp} from "react-icons/bs";
 import Link from "antd/es/typography/Link";
@@ -84,7 +84,7 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <img src={ilustration.src} alt="" />
+          <img src={ilustration.src} alt="ilustration" />
           <div className="text-with-ilustration">
             <Title level={2}>
               Utilizamos as melhores tecnologias do mercado!
@@ -123,9 +123,12 @@ export default function Home() {
       </section>
       <Projects></Projects>
       <Footer></Footer>
-      <button className="btnwhts">
+      <Link
+        href="https://wa.me/5511961256474?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to."
+        className="btnwhts"
+      >
         <BsWhatsapp size={30}></BsWhatsapp>
-      </button>
+      </Link>
     </main>
   );
 }

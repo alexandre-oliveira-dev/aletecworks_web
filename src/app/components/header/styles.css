@@ -116,12 +116,13 @@
         display: none;
     }
 
-    .logo h1 {
-        font-size: 30px;
-    }
-
     .logo {
         flex: none;
+    }
+
+    .logo>img {
+        width: 100px;
+        height: 100px;
     }
 
     .header-component {
