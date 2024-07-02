@@ -6,7 +6,7 @@ import Script from "next/script";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "Ale Tecworks",
+  title: "Ale Tecworks 🚀",
   description: "Eleve sua presença online com inovação e tecnologia. 💻🚀",
   authors: [
     {
@@ -26,6 +26,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#121212" />
         <meta property="og:theme-color" content="#121212" />
+        <link rel="icon" href="/logo.png" />
         <meta
           property="og:image"
           content="https://aletecworks-web.vercel.app/logo.png"
