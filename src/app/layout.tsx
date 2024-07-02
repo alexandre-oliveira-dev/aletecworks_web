@@ -24,6 +24,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
+        <meta name="theme-color" content="#121212" />
+        <meta property="og:theme-color" content="#121212" />
+        <meta
+          property="og:image"
+          content="https://aletecworks-web.vercel.app/logo.png"
+        />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-1PCTTQRLDX"
