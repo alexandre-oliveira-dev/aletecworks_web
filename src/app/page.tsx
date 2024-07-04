@@ -8,6 +8,7 @@ import ilustration from "../../public/ilustration.jpg";
 import {BsWhatsapp} from "react-icons/bs";
 import Link from "antd/es/typography/Link";
 import Projects from "./components/projects";
+import Tasks from "./components/asks";
 
 export default function Home() {
   const projectsTypes = [
@@ -38,12 +39,11 @@ export default function Home() {
       <section className="section">
         <div className="box-text">
           <Title level={1}>
-            Colocamos a sua Empresa onde ela já deveria estar.
+            Elevamos sua Empresa ao patamar que ela merece
           </Title>
           <p>
-            Desenvolvimento de soluções personalizadas e criativas para cada
-            momento do seu negócio, que atenda as expectativas do seu Cliente
-            Final.
+            Criamos soluções únicas e inovadoras que impulsionam seu negócio e
+            superam as expectativas dos seus clientes
           </p>
           <Link href="https://wa.me/5511961256474?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to.">
             Fazer um orçamento <BsWhatsapp></BsWhatsapp>
@@ -66,11 +66,13 @@ export default function Home() {
         <div className="box-projects-types">
           {projectsTypes.map(item => {
             return (
-              <Card key={item.key} className="card-item-project-type">
-                <img width={64} height={64} src={item.img} alt="icon"></img>
-                <Title level={3}>{item.title}</Title>
-                <p style={{color: "grey"}}>{item.subtitlte}</p>
-              </Card>
+              <div key={item.key}>
+                <Card className="card-item-project-type">
+                  <img width={64} height={64} src={item.img} alt="icon"></img>
+                  <Title level={3}>{item.title}</Title>
+                  <p style={{color: "grey"}}>{item.subtitlte}</p>
+                </Card>
+              </div>
             );
           })}
         </div>
@@ -122,6 +124,7 @@ export default function Home() {
         </div>
       </section>
       <Projects></Projects>
+      <Tasks></Tasks>
       <Footer></Footer>
       <Link
         href="https://wa.me/5511961256474?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to."

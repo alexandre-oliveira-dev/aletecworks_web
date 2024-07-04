@@ -70,7 +70,7 @@ export default function Header() {
             className="menuItem"
             onClick={() => {
               window.scrollTo({
-                top: 10000,
+                top: 1900,
                 behavior: "smooth",
               });
               toggleCollapsed();
@@ -104,7 +104,7 @@ export default function Header() {
           onClick={() => {
             if (typeof window !== "undefined")
               window.scrollTo({
-                top: 1500,
+                top: 2200,
                 behavior: "smooth",
               });
           }}
