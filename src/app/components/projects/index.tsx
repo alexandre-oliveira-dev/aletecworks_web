@@ -38,7 +38,7 @@ export default function Projects() {
         alignItems: "center",
       }}
     >
-      <Title level={1}>Alguns de nossos projétos</Title>
+      <Title level={1}>Alguns de nossos projetos</Title>
       <div className="box-models">
         {models.map(item => {
           return (
@@ -49,9 +49,9 @@ export default function Projects() {
                   if (typeof window !== "undefined")
                     window.location.href = `pdf/${item.pdf}`;
                 }}
-                title="Ver projéto"
+                title="Ver projeto"
               >
-                visualizar projéto
+                visualizar projeto
                 <FiEye></FiEye>
               </button>
             </span>

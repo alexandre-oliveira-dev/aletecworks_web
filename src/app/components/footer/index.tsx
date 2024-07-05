@@ -37,7 +37,7 @@ export default function Footer() {
                 }
                 size={30}
               ></BsInstagram>{" "}
-              Instagran
+              Instagram
             </a>
           </Row>
           <br />

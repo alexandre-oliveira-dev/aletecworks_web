@@ -39,11 +39,11 @@ export default function Home() {
       <section className="section">
         <div className="box-text">
           <Title level={1}>
-            Elevamos sua Empresa ao patamar que ela merece
+            Elevamos sua Empresa ao patamar que ela merece !
           </Title>
           <p>
             Criamos soluções únicas e inovadoras que impulsionam seu negócio e
-            superam as expectativas dos seus clientes
+            superam as expectativas dos seus clientes.
           </p>
           <Link href="https://wa.me/5511961256474?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20proj%C3%A9to.">
             Fazer um orçamento <BsWhatsapp></BsWhatsapp>

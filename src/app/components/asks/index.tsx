@@ -10,7 +10,7 @@ export default function Asks() {
     {
       ask: "Quanto custa um site ?",
       reply:
-        "Depende do projéto que você necessita criar e a quantidade de funcionabilidades.",
+        "Depende do projetoque você necessita criar e a quantidade de funcionabilidades.",
     },
     {
       ask: "O que é SEO e por que é importante para o meu site?",
@@ -19,11 +19,11 @@ export default function Asks() {
     },
     {
       ask: "Quanto tempo leva para ficar pronto ?",
-      reply: "Depende do projéto, mas varia entre 1 à 3 meses.",
+      reply: "Depende do projeto, mas varia entre 1 à 3 meses.",
     },
     {
       ask: "Quais as formas de pagamento ?",
-      reply: "Cartão de crédito e débito, pix, boleto.",
+      reply: "Cartão de crédito e débito, pix.",
     },
   ];
 

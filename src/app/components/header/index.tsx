@@ -64,7 +64,7 @@ export default function Header() {
               toggleCollapsed();
             }}
           >
-            Inicio
+            Início
           </button>
           <button
             className="menuItem"
@@ -98,7 +98,7 @@ export default function Header() {
               });
           }}
         >
-          Inicio
+          Início
         </button>
         <button
           onClick={() => {
