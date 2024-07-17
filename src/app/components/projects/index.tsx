@@ -51,7 +51,7 @@ export default function Projects() {
                 }}
                 title="Ver projeto"
               >
-                visualizar projeto
+                ver projeto
                 <FiEye></FiEye>
               </button>
             </span>

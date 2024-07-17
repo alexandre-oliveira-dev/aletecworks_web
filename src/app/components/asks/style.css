@@ -33,7 +33,7 @@
 }
 
 .box-details>details>summary {
-    font-size: 25px;
+    font-size: 22px;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
 }
 
 .box-details>details>p {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
     color: var(--bacColorDetails);
     padding: 10px;

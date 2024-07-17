@@ -10,7 +10,7 @@ export default function Asks() {
     {
       ask: "Quanto custa um site ?",
       reply:
-        "Depende do projetoque você necessita criar e a quantidade de funcionabilidades.",
+        "Depende do projeto que você necessita criar e a quantidade de funcionabilidades.",
     },
     {
       ask: "O que é SEO e por que é importante para o meu site?",
