@@ -48,11 +48,7 @@ export default function Projects() {
           X
         </Button>
 
-        <object
-          className="pdfPreview"
-          data={item.item}
-          type="application/pdf"
-        ></object>
+        <iframe className="pdfPreview" src={item.item}></iframe>
       </div>
     );
   };
@@ -71,7 +67,7 @@ export default function Projects() {
         {models.map(item => {
           return (
             <span className="box-image-model" key={item.key}>
-              <object className="imgModel" data={`pdf/${item.pdf}`} />
+              <iframe className="imgModel" src={`pdf/${item.pdf}`} />
               <button
                 onClick={() => {
                   setPdfurl(`pdf/${item.pdf}`);

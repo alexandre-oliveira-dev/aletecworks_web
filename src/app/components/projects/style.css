@@ -3,8 +3,10 @@
 }
 
 .imgModel {
-    width: 400px !important;
+    width: 100% !important;
     height: 200px !important;
+    border: 0;
+
 }
 
 .box-image-model {
