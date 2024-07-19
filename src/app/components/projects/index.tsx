@@ -1,33 +1,61 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
 import {FiEye} from "react-icons/fi";
-import {Image} from "antd";
-import model1 from "./assets/model1.png";
-import model2 from "./assets/model2.png";
-import model3 from "./assets/model3.png";
+import {Button, Image, Row} from "antd";
 import Title from "antd/es/typography/Title";
 
 export default function Projects() {
+  const [pdfurl, setPdfurl] = useState<string>("");
   const models = [
     {
       key: 1,
-      img: model1,
       pdf: "model1.pdf",
     },
     {
       key: 2,
-      img: model2,
       pdf: "model2.pdf",
     },
     {
       key: 3,
-      img: model3,
       pdf: "model3.pdf",
     },
+    {
+      key: 4,
+      pdf: "model4.pdf",
+    },
+    {
+      key: 5,
+      pdf: "model5.pdf",
+    },
+    {
+      key: 6,
+      pdf: "model6.pdf",
+    },
   ];
+
+  const View = (item: {item: string}) => {
+    if (!item) return <></>;
+    return (
+      <div onClick={() => setPdfurl("")} className="boxpdfpreview">
+        <Button
+          className="closebtn"
+          style={{color: "#fff"}}
+          onClick={() => setPdfurl("")}
+        >
+          X
+        </Button>
+
+        <object
+          className="pdfPreview"
+          data={item.item}
+          type="application/pdf"
+        ></object>
+      </div>
+    );
+  };
 
   return (
     <section
@@ -43,11 +71,10 @@ export default function Projects() {
         {models.map(item => {
           return (
             <span className="box-image-model" key={item.key}>
-              <Image className="imgModel" src={item.img.src} />
+              <object className="imgModel" data={`pdf/${item.pdf}`} />
               <button
                 onClick={() => {
-                  if (typeof window !== "undefined")
-                    window.location.href = `pdf/${item.pdf}`;
+                  setPdfurl(`pdf/${item.pdf}`);
                 }}
                 title="Ver projeto"
               >
@@ -58,6 +85,7 @@ export default function Projects() {
           );
         })}
       </div>
+      {pdfurl && <View item={pdfurl}></View>}
     </section>
   );
 }
