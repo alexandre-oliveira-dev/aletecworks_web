@@ -1,20 +1,23 @@
 .projectscomponent>h1 {
     color: #fff;
+
+}
+
+.projectscomponent {
+    padding: 1rem;
 }
 
 .imgModel {
-    width: 100% !important;
-    height: 100% !important;
+    width: 400px !important;
+    height: 200px !important;
     border: 0;
-
+    object-fit: cover;
 }
 
 .box-image-model {
-    height: calc(200px + 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .box-image-model>button {
@@ -38,7 +41,7 @@
 
 .box-models {
     display: flex;
-    gap: 30px;
+    gap: 1rem;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
