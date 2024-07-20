@@ -268,4 +268,8 @@
     min-height: auto !important;
     margin-top: 2rem;
   }
+
+  .aboutus {
+    padding: 1rem 1rem 0 1rem;
+  }
 }
